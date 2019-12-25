@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <com.ctsaing.flyandroid.ImageTextView
+    <com.ctsaing.flyandroid.ImageTextLayoutView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:image_height="40dp"
@@ -15,6 +16,20 @@
         app:text_color="#aaff00"
         app:text_size="8sp"
         app:text_content="自定义View"
-        android:layout_centerInParent="true"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
 
-</RelativeLayout>
+    <com.ctsaing.flyandroid.ImageTextCustomView
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:imageSrc="@mipmap/ic_launcher"
+        app:imageWidth="40dp"
+        app:imageHeight="40dp"
+        app:imageAndTextMargin="10dp"
+        app:textSize="10sp"
+        app:textColor="@android:color/holo_red_dark"
+        app:textContent="另一个自定义view"/>
+
+</LinearLayout>

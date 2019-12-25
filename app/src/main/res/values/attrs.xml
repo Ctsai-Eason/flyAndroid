@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="ImageTextView">
+    <declare-styleable name="ImageTextLayoutView">
         <attr name="image_width" format="dimension"/>
         <attr name="image_height" format="dimension"/>
         <attr name="image_src" format="reference"/>
-        <attr name="text_size" format="dimension"/>
+        <attr name="text_size" format="float|dimension"/>
         <attr name="text_color" format="color|reference"/>
         <attr name="text_content" format="string|reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ImageTextCustomView">
+        <attr name="imageWidth" format="dimension"/>
+        <attr name="imageHeight" format="dimension"/>
+        <attr name="imageSrc" format="reference"/>
+        <attr name="textSize" format="float|dimension"/>
+        <attr name="textColor" format="color|reference"/>
+        <attr name="textWidth" format="dimension"/>
+        <attr name="textHeight" format="dimension"/>
+        <attr name="textContent" format="string"/>
+        <attr name="imageAndTextMargin" format="dimension"/>
     </declare-styleable>
 </resources>
