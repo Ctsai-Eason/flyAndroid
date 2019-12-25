@@ -1,4 +1,4 @@
-package com.ctsaing.flyandroid;
+package com.ctsaing.flyandroid.customViews;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,6 +16,12 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
+import com.ctsaing.flyandroid.R;
+
+/**
+ * 通过继承View实现上面图片下边文字的自定义View
+ * created by cyh on 2019/12/25
+ */
 public class ImageTextCustomView extends View {
 
 	private Drawable drawable;//画上方图片

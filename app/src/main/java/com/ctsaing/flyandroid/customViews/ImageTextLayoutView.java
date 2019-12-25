@@ -1,4 +1,4 @@
-package com.ctsaing.flyandroid;
+package com.ctsaing.flyandroid.customViews;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
+
+import com.ctsaing.flyandroid.R;
 
 /**
  * 上面图片，下面文字的自定义view，通过RelativeLayout的方式实现
