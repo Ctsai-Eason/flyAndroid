@@ -9,12 +9,12 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.support.annotation.Nullable;
 import android.text.Layout;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.View;
 
-import androidx.annotation.Nullable;
 
 import com.ctsaing.flyandroid.R;
 
@@ -98,7 +98,7 @@ public class ImageTextCustomView extends View {
 		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
 		int widthMode = MeasureSpec.getMode(widthMeasureSpec);
-		int heightMoede = MeasureSpec.getMode(heightMeasureSpec);
+		int heightMode = MeasureSpec.getMode(heightMeasureSpec);
 		int widthSize = MeasureSpec.getSize(widthMeasureSpec);
 		int heightSize = MeasureSpec.getSize(heightMeasureSpec);
 
@@ -113,11 +113,11 @@ public class ImageTextCustomView extends View {
 		 * tips:当xml文件中设置的是wrap_content时，Mode==AT_MOST
 		 * 当设置位match_parent或具体的宽高时,Mode == EXACTLY
 		 */
-		if (widthMode == MeasureSpec.AT_MOST && heightMoede == MeasureSpec.AT_MOST) {
+		if (widthMode == MeasureSpec.AT_MOST && heightMode == MeasureSpec.AT_MOST) {
 			setMeasuredDimension(viewWidth, viewHeight);
 		} else if (widthMode == MeasureSpec.AT_MOST) {
 			setMeasuredDimension(viewWidth, heightSize);
-		} else if (heightMoede == MeasureSpec.AT_MOST) {
+		} else if (heightMode == MeasureSpec.AT_MOST) {
 			setMeasuredDimension(widthSize, viewHeight);
 		} else {
 			setMeasuredDimension(widthSize, heightSize);

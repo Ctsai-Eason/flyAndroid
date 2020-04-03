@@ -7,29 +7,45 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <com.ctsaing.flyandroid.customViews.ImageTextLayoutView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:image_height="40dp"
-        app:image_src="@mipmap/ic_launcher"
-        app:image_width="40dp"
-        app:text_color="#aaff00"
-        app:text_size="8sp"
-        app:text_content="自定义View"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"/>
+    <!--<com.ctsaing.flyandroid.customViews.ImageTextLayoutView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:image_height="40dp"-->
+        <!--app:image_src="@mipmap/ic_launcher"-->
+        <!--app:image_width="40dp"-->
+        <!--app:text_color="#aaff00"-->
+        <!--app:text_size="8sp"-->
+        <!--app:text_content="自定义View"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
 
-    <com.ctsaing.flyandroid.customViews.ImageTextCustomView
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:imageSrc="@mipmap/ic_launcher"
-        app:imageWidth="40dp"
-        app:imageHeight="40dp"
-        app:imageAndTextMargin="10dp"
-        app:textSize="10sp"
-        app:textColor="@android:color/holo_red_dark"
-        app:textContent="另一个自定义view"/>
+    <!--<com.ctsaing.flyandroid.customViews.ImageTextCustomView-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:imageSrc="@mipmap/ic_launcher"-->
+        <!--app:imageWidth="40dp"-->
+        <!--app:imageHeight="40dp"-->
+        <!--app:imageAndTextMargin="10dp"-->
+        <!--app:textSize="10sp"-->
+        <!--app:textColor="@android:color/holo_red_dark"-->
+        <!--app:textContent="另一个自定义view"/>-->
+
+    <com.ctsaing.flyandroid.customViews.CircularProgressView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        app:centerText="按钮"
+        app:centerTextColor="@color/progress_start_color"
+        app:centerTextSize="12sp"
+        app:backRingWidth="5dp"
+        app:backRingColor="@color/colorAccent"
+        app:headRingColor="@color/progress_start_color"
+        app:headRingWidth="3dp"
+        app:longClickDuration="5000"
+        android:padding="5dp" />
 
 </LinearLayout>

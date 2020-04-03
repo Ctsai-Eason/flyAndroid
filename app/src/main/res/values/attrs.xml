@@ -2,24 +2,44 @@
 <resources>
 
     <declare-styleable name="ImageTextLayoutView">
-        <attr name="image_width" format="dimension"/>
-        <attr name="image_height" format="dimension"/>
-        <attr name="image_src" format="reference"/>
-        <attr name="text_size" format="float|dimension"/>
-        <attr name="text_color" format="color|reference"/>
-        <attr name="text_content" format="string|reference"/>
+        <attr name="image_width" format="dimension" />
+        <attr name="image_height" format="dimension" />
+        <attr name="image_src" format="reference" />
+        <attr name="text_size" format="float|dimension" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="text_content" format="string|reference" />
     </declare-styleable>
 
 
     <declare-styleable name="ImageTextCustomView">
-        <attr name="imageWidth" format="dimension"/>
-        <attr name="imageHeight" format="dimension"/>
-        <attr name="imageSrc" format="reference"/>
-        <attr name="textSize" format="float|dimension"/>
-        <attr name="textColor" format="color|reference"/>
-        <attr name="textWidth" format="dimension"/>
-        <attr name="textHeight" format="dimension"/>
-        <attr name="textContent" format="string"/>
-        <attr name="imageAndTextMargin" format="dimension"/>
+        <attr name="imageWidth" format="dimension" />
+        <attr name="imageHeight" format="dimension" />
+        <attr name="imageSrc" format="reference" />
+        <attr name="textSize" format="float|dimension" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="textWidth" format="dimension" />
+        <attr name="textHeight" format="dimension" />
+        <attr name="textContent" format="string" />
+        <attr name="imageAndTextMargin" format="dimension" />
+    </declare-styleable>
+
+    <attr name="centerText" format="string|reference" />
+    <attr name="centerTextColor" format="color|reference" />
+    <attr name="centerTextSize" format="dimension|reference" />
+    <attr name="backRingWidth" format="dimension|reference" />
+    <attr name="headRingWidth" format="dimension|reference" />
+    <attr name="backRingColor" format="color|reference" />
+    <attr name="headRingColor" format="color|reference" />
+    <attr name="longClickDuration" format="integer|reference" />
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="centerText" /> <!-- 圆环正中心的文字 -->
+        <attr name="centerTextColor" /> <!-- 中心文字颜色 -->
+        <attr name="centerTextSize" /> <!-- 中心文字大小 -->
+        <attr name="backRingWidth" /> <!-- 底层环的宽度 -->
+        <attr name="headRingWidth" /> <!-- 顶层环的宽度 -->
+        <attr name="backRingColor" />   <!-- 底层环的颜色 -->
+        <attr name="headRingColor" />   <!-- 顶层环的颜色 -->
+        <attr name="longClickDuration" /><!-- 长按时间 -->
     </declare-styleable>
 </resources>

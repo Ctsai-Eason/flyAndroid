@@ -11,13 +11,13 @@ public class BaseContract {
 	//Model处理网络访问
 	interface Model{
 		Observable<BaseBean> sendPost(String url, Map<String, Object> map);
-		Observable sendGet(String url);
+		Observable<BaseBean> sendGet(String url);
 	}
 
 	//View请求访问，并接收返回的结果
 	interface View{
 
-		void getNetData(BaseBean baseBean);
+		void getNetData(BaseBean bean);
 	}
 
 	//接受View的网络请求发送给model，并处理modle返回的数据，再给View。

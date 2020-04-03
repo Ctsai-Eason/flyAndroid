@@ -1,13 +1,14 @@
 package com.ctsaing.flyandroid.baseMvp;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
-public abstract class BaseActivity extends AppCompatActivity implements BaseContract.View {
+public abstract class BaseActivity extends FragmentActivity implements BaseContract.View {
 
 	public BasePresenter presenter;
+
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
